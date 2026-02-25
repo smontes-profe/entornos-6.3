@@ -399,3 +399,46 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# ============================================================
+# Maven / Java
+# ============================================================
+
+# Carpeta de salida de Maven (compilados, JARs, informes, etc.)
+target/
+
+# Archivos compilados de Java
+*.class
+
+# Paquetes Java
+*.jar
+*.war
+*.ear
+*.nar
+
+# Archivos de cobertura de JaCoCo
+*.exec
+jacoco.exec
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# NetBeans
+nbproject/
+nbbuild/
+nbdist/
+nb-configuration.xml
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
