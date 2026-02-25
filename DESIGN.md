@@ -42,7 +42,7 @@ classDiagram
     }
  
     %% Relaciones
-    Especialista <|.. Mecanico : Realización
+    Especialista <|.. Mecanico : IMplementación
     Vehiculo <|-- Coche : Herencia
     Vehiculo <|-- Moto : Herencia
     Cliente "1" --> "1..*" Vehiculo : Asociación (posee)
