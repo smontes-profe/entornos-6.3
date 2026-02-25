@@ -42,7 +42,7 @@ classDiagram
     }
  
     %% Relaciones
-    Especialista <|.. Mecanico : IMplementación
+    Especialista <|.. Mecanico : Implementación
     Vehiculo <|-- Coche : Herencia
     Vehiculo <|-- Moto : Herencia
     Cliente "1" --> "1..*" Vehiculo : Asociación (posee)
@@ -114,7 +114,7 @@ classDiagram
     }
 
     %% Relaciones detectadas
-    Especialista <|.. Mecanico : Realización
+    Especialista <|.. Mecanico : Implementación
     Vehiculo <|-- Coche : Herencia
     Vehiculo <|-- Moto : Herencia
     Cliente "1" --> "*" Vehiculo : Asociación (posee)
