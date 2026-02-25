@@ -1,14 +1,17 @@
 package com.entornos;
 
-import java.util.ArrayList;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Main {
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) {
-        System.out.println("=== Sistema de Gestión de Taller ===");
+        logger.info("=== Sistema de Gestión de Taller ===");
 
         // Crear un cliente
         Cliente cliente = new Cliente("12345678A", "Ana García");
-        System.out.println("Cliente creado: " + cliente.getNombre() + " (DNI: " + cliente.getDni() + ")");
+        logger.info("Cliente creado: {} (DNI: {})", cliente.getNombre(), cliente.getDni());
 
         // Crear algunos vehículos
         Coche coche1 = new Coche("1234ABC", "Renault Clio", 5);
@@ -18,11 +21,11 @@ public class Main {
         cliente.getVehiculos().add(coche1);
         cliente.getVehiculos().add(coche2);
 
-        System.out.println("\nVehículos asociados:");
+        logger.info("Vehículos asociados:");
         for (Vehiculo v : cliente.getVehiculos()) {
-            System.out.println("- " + v.toString());
+            logger.info("- {}", v);
         }
 
-        System.out.println("\n=== Ejecución finalizada con éxito ===");
+        logger.info("=== Ejecución finalizada con éxito ===");
     }
 }
